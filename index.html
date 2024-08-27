@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="icon" href="assets/img/logo.png" />
+    <title>Encriptador de Texto | Alura Challenge</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="./assets/img/logo.png" alt="logo Alura">
+        <h1 class="header__logo">Encriptador</h1>
+    </header>
+    <main>
+        <form class="seccion__form">
+            <textarea class="seccionn__encriptador__input" name="textarea" id="textArea" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="seccion__alerta">
+                <div class="alerta__msj">
+                    <img class="alerta__img" src="./assets/img/advertencia.png" alt="icono alerta"><span>Solo letras minusculas y sin acentos</span>
+                </div>
+                <div class="seccion__form__btn__main">
+                    <input class="seccion__form__btn" id="botonEncriptar" type="submit" value="Encriptar">
+                    <input class="seccion__form__btn" id="botonDesencriptar" type="submit" value="Desencriptar">
+                </div>
+            </div>
+        </form>
+        <aside class="resultado">
+            <img class="img__resultado" src="./assets/img/Muñeco.png" alt="">
+            <div class="loader hidden"></div> 
+            <div class="resultado__container">
+                <h3 class="resultado__titulo" id="resultado__titulo" >Ningún mensaje fue encontrado</h3>
+                <p class="resultado__texto" id="resultado__texto" >Ingresa el texto que deseas encriptar o desencriptar.</p>
+                <button id="copiarBtn" class="seccion__form__btn--segundo hidden">Copiar</button>
+            </div>            
+        </aside>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
